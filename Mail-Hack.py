@@ -1,4 +1,3 @@
-
 import smtplib, sys, os, random
 from os import system
 
@@ -10,13 +9,12 @@ LITBU = '\033[94m'
 YELLOW = '\033[3;33m'
 CYAN = '\033[0;36'
 colors = ['\033[92m', '\033[91m', '\033[0;33m']
-RAND = random.choice(colors)
 
 GMAIL_PORT = '587'
 
 def artwork():
     print("\n")
-    print(RAND + '''
+    print(\033[92m + '''
  ██████╗ ███╗   ███╗ █████╗ ██╗██╗         ██╗  ██╗ █████╗  ██████╗██╗  ██╗
 ██╔════╝ ████╗ ████║██╔══██╗██║██║         ██║  ██║██╔══██╗██╔════╝██║ ██╔╝
 ██║  ███╗██╔████╔██║███████║██║██║         ███████║███████║██║     █████╔╝ 
@@ -24,8 +22,8 @@ def artwork():
 ╚██████╔╝██║ ╚═╝ ██║██║  ██║██║███████╗    ██║  ██║██║  ██║╚██████╗██║  ██╗
  ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚══════╝    ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
                                                                            beta 1.0
-''') | lolcat
-print ("Maded By BASEL OMAR") |lolcat
+''')
+print ("\033[92mMaded By BASEL OMAR")
 artwork()
 smtp = smtplib.SMTP("smtp.gmail.com", GMAIL_PORT)
 
