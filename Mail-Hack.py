@@ -11,9 +11,8 @@ CYAN = '\033[0;36'
 colors = ['\033[92m', '\033[91m', '\033[0;33m']
 
 GMAIL_PORT = '587'
-
-def artwork():
 os.system("clear")
+def artwork():
     print("\n")
     print('''
 \033[92m ██████╗ ███╗   ███╗ █████╗ ██╗██╗         ██╗  ██╗ █████╗  ██████╗██╗  ██╗
